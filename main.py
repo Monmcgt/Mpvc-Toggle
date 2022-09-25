@@ -1,3 +1,5 @@
+#/usr/bin/python3
+
 import subprocess
 
 def run_command(command):
@@ -12,7 +14,7 @@ def main():
 
     out = run_command_text([mpvc])
     
-    if out.startswith("No fiiles added to "):
+    if out.startswith("No files added to "):
         print(out)
         return
 
